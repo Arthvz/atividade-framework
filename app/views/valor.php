@@ -1,9 +1,3 @@
-<?php
-
-require_once ('../Models/funcClass.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,17 +11,10 @@ require_once ('../Models/funcClass.php');
   <section>
     <h1>-== Ajuste Salárial ==-</h1>
   </section>
-  <?php
-    $func = new Funcionario ();
-    
-    $func->setNome($_POST['nome']);
-    $func->setSalario($_POST['salario']);
-    $func->setDepto($_POST['departamento']);
-
-    $func->imprimeDadosFunc();
-
-    $func->salarioDepto ();
-    ?>
+  <span>Nome: <?php echo $user["nome"] ?><br></span>
+  <span>Salário: R$<?php echo $user["salario"] ?><br></span>
+  <span>Departamento: <?php echo $user["departamento"] ?><br></span>
+  <span>Novo salário: <?php echo $salarioNovo ?></span>
 </body>
 <style>
   *{

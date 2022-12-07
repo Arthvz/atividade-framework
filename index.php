@@ -2,7 +2,7 @@
 
 require __DIR__ . '/core/support/config.php';
 require __DIR__ . '/load.php';
-
+ 
 $_GET['key'] = (isset($_GET['key']) ? $_GET['key'] . '/' : 'index/');
 $key = $_GET['key'];
 $separator = explode('/', $key);
